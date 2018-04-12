@@ -5,8 +5,8 @@
 <title>莲_星音__ blog</title>
 <style>
 body, body * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 </style>
 <script>
