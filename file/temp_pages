@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>99乘法</title>
+<style type="text/css">
+html, body, #idFact {
+	height: 100%;
+}
+body, body * {
+	margin: 0;
+	padding: 0;
+}
+#idFact {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+</style>
+</head>
+<body>
+<div id="idFact">99乘法表</div>
+<script>
+const fnFact = (n = 9) => `<table border="1">${
+	Array.from(Array(n), (e, i) => `<tr>${
+	Array.from(Array(++i), (n, m) => `<td style="background-color:#${(~~(Math.random() * (1 << 24))).toString(16)}">${++m} * ${i} = ${m * i}</td>`).join('')
+	}</tr>`).join('')
+}</table>`;
+document.getElementById('idFact').innerHTML = fnFact();
+</script>
+</body>
+</html>
