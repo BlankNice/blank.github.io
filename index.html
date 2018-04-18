@@ -10,13 +10,14 @@ body, body * {
 }
 body {
   text-align: center;
+	font-filay: '微软雅黑';
   font-size: 14px;
 	background: url("https://raw.githubusercontent.com/BlankNice/nice/master/images/%E5%B0%91%E5%A5%B3%E5%89%8D%E7%BA%BF.jpg") no-repeat center center fixed;
 	-wibkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 }
-  #myindex {
+  #myIndex {
     background: rgba(200, 200, 200, 0.6);
     width: 110px;
     height: 68px;
@@ -28,13 +29,16 @@ body {
     top: 50%;
     z-index: 110;
     margin: -55px 0 0 -55px;
+		line-height: 68px;
+	  color: #333;
   }
 </style>
 </head>
 <body>
-  <div id="myIndex">My a page</div>
+  <div id="myIndex">My a page...</div>
 <script>
 window.onload = function() {
+  // 加载完隐藏 加载中
   var oIdIndex = document.getElementById('myIndex');
   oIdIndex.style.display = 'none';
 };
