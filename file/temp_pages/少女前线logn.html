@@ -3,43 +3,53 @@
 <head>
 <meta charset="utf-8" />
 <title>blank、'Nine-five__ blog</title>
-<style>
-body, body * {
-  margin: 0;
-  padding: 0;
+<link href="../../css/reset.css" type="text/css" rel="stylesheet" />
+<style type="text/css">
+<!--
+@media screen and (max-width: 640px) {
+  body {
+      background: url("../../images/八重樱.jpg") no-repeat center top fixed;
+  }
+}
+@media screen and (min-width: 641px) {
+  body {
+	    background: url("../../images/少女前线.jpg") no-repeat center center fixed;
+  }
 }
 body {
   text-align: center;
-	font-filay: '微软雅黑';
+  font-filay: '微软雅黑';
   font-size: 14px;
-	background: url("https://raw.githubusercontent.com/BlankNice/nice/master/images/%E5%B0%91%E5%A5%B3%E5%89%8D%E7%BA%BF.jpg") no-repeat center center fixed;
 	-wibkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 }
-  #myIndex {
-    background: rgba(200, 200, 200, 0.6);
-    width: 108px;
-    height: 49px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* 加载中 */
+  #myLoading {
+    background: rgba(255, 192, 251, 0.4);
+    width: 125px;
+    height: 45px;
+    border: 1px solid pink;
+    border-radius: 8px;
     box-shadow: 0 0 3px #ccc;
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
     z-index: 110;
-    margin: -24.5px 0 0 -54px;
-	line-height: 49px;
-	color: white;
+    margin: -23.5px 0 0 -63.5px;
+    font-size: 15px;
+	  line-height: 45px;
+	  color: white;
   }
+-->
 </style>
 </head>
 <body>
-  <div id="myIndex">My a page...</div>
+  <div id="myLoading">加载中...</div>
 <script>
 window.onload = function() {
   // 加载完隐藏 加载中
-  var oIdIndex = document.getElementById('myIndex');
+  var oIdIndex = document.getElementById('myLoading');
   oIdIndex.style.display = 'none';
 };
 console.log('demo blog');
